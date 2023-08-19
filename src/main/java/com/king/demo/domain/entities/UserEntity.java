@@ -9,13 +9,22 @@ public class UserEntity {
     private Long id;
     @Column(length = 30,nullable = false)
     private String name;
+    @Column(length = 3,nullable = false)
     private int age;
 
-    public void setId(Long id) {
-        this.id = id;
+    public String getName() {
+        return name;
     }
 
-    public Long getId() {
-        return id;
+    public int getAge() {
+        return age;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 }
